@@ -4,7 +4,7 @@ import { HomeComponent } from './home/home.component';
 export const routes: Routes = [
   {
     path: 'dashboard',
-    loadChildren: () =>
+    loadComponent: () =>
       import('./deployment-dashboard/deployment-dashboard.component').then(
         (m) => m.DeploymentDashboardComponent
       ),
